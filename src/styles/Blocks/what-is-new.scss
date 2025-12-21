@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 48px;
 
-  @include onTablet {
+  @include on-tablet {
     gap: 120px;
   }
 
@@ -12,28 +12,28 @@
     height: 200px;
     object-fit: cover;
 
-    @include onTablet {
+    @include on-tablet {
       height: 400px;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       height: 460px;
     }
   }
 
   &__content {
-    @include pageGrid;
+    @include page-grid;
   }
 
   &__title {
     margin: 0;
     grid-column: 1/-1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 1/4;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 1/7;
     }
   }
@@ -44,11 +44,11 @@
     margin: 0;
     grid-column: 1/-1;
 
-    @include onTablet {
+    @include on-tablet {
       grid-column: 4/-1;
     }
 
-    @include onDesktop {
+    @include on-desktop {
       grid-column: 8/-1;
     }
   }
