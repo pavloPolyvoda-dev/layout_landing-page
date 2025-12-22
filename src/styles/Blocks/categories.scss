@@ -54,7 +54,7 @@
   }
 
   &__photo {
-    @include hover(Transform, scale(1.1));
+    @include hover(Transform, scale(1.05));
 
     position: absolute;
     width: 100%;

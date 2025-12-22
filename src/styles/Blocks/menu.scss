@@ -3,7 +3,7 @@
   overflow: auto;
 
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: $bg-input;
   font-weight: 700;
 
   &__top {
@@ -12,7 +12,11 @@
     position: sticky; /* to keep cross always visible */
     top: 0;
     z-index: 1;
-    background-color: #e5e5e5;
+    background-color: $bg-input;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
   }
 
   &__nav {
